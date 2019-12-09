@@ -5,8 +5,7 @@
 /.pnp
 .pnp.js
 /src/component/page
-/src/component/AppRouter
-/src/component/Register
+/src/component/AppRouter.js
 
 # testing
 /coverage
