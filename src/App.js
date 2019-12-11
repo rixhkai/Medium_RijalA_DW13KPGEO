@@ -13,13 +13,9 @@ function App() {
     <div>
     <div >
       <header >
-      
-        </header>
+      </header>
         <SearchAppBar/>
-      
-     
     </div>
-    
     <ScrollableTabsButtonForce position="sticky"/>
     
     </div>
