@@ -9,6 +9,8 @@ import './content.css'
 import StarRateIcon from '@material-ui/icons/StarRate';
 import AlignItemsList from './middleCont';
 import SimpleList from './sideBar';
+import { Button } from '@material-ui/core';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 const useStyles = makeStyles(theme=> ({
   card: {
@@ -217,8 +219,11 @@ export default function ImgMediaCard() {
                
             </Grid>
          </Grid>
+         <div align="right" style={{maxWidth:"1032px"}}>
+         <Button style={{color:"green", fontSize:"small"}} > SEE ALL FEATURED &nbsp; <ArrowForwardIosIcon style={{fontSize:"10px"}}/></Button>
          </div>
-
+         </div>
+                        
     <div className="divider"></div> {/* divide content */}
 
         
