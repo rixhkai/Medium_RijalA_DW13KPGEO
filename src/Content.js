@@ -226,12 +226,11 @@ export default function ImgMediaCard() {
 
     <div >
             <Grid container spacing={0} style={{maxWidth:"1032px"}} className={classes.card}>
+                <Grid item xs={12} md={7} style={{margin:"0px auto 0px 0px", width:"600px"}}>
+                    <AlignItemsList /></Grid>             
                 <Grid item style={{margin:"0px 0px 0px auto",width:"400px"}} >
-                <SimpleList/>
-            </Grid>
-            <Grid item xs={12} md={7} style={{margin:"0px auto 0px 0px", width:"600px"}}>
-                <AlignItemsList />
-            </Grid>
+                    <SimpleList/>
+                </Grid>
             </Grid>
         </div>
     </div>
