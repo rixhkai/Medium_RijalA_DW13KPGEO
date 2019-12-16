@@ -10,12 +10,7 @@ import {Home} from "./component/home/home";
 import {Onezero} from "./component/category/OneZero";
 import ArticleDetail from "./component/detail/ArticleDetail";
 import NewStory from "./component/profile/NewStory";
-import Bookmarks from "./component/bookmark/Bookmarks";
-import ProfilPage from "./component/profile/ProfilePage";
 import Comment from "./component/detail/Comment";
-import Stories from "./component/profile/Story";
-import Stats from "./component/profile/Stats";
-import ArticlePerson from "./component/home/ArticlePerson";
 
 ReactDOM.render(
  <Router>
@@ -24,6 +19,7 @@ ReactDOM.render(
    <Route path='/category' component={Onezero} />
    <Route path='/articledetail' component={ArticleDetail} />
    <Route path='/comment' component={Comment} />
+   <Route path='/new_story' component={NewStory} />
   </Switch>
  </Router>,
 
