@@ -1,25 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import { Typography, Button } from '@material-ui/core';
-import Container from '@material-ui/core/Container';
-import SearchAppBar from './NavBar';
-import ScrollableTabsButtonForce from './Tab';
+import ScrollableTabsButtonForce from './component/home/Tab';
+import ImgMediaCard from './component/home/Content';
+import { Home } from './component/home/home';
 
 
-function App() {
+class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      modalSelector: ''
+    }
+  }
+  render(){
   return (
     <div>
+     
     <div >
-      <header >
-      </header>
-        <SearchAppBar/>
     </div>
-    <ScrollableTabsButtonForce position="sticky"/>
-    
+    <Home/>
     </div>
   );
+  }
 }
 
 export default App;

@@ -8,6 +8,7 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import { Button } from '@material-ui/core';
+import TransitionsModal from '../login/Register';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -93,7 +94,7 @@ export default function SearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
-          <Button style={{color:"grey"}}>Login</Button>
+          <TransitionsModal/>
         </Toolbar>
      
     </div>
