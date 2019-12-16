@@ -23,6 +23,7 @@ ReactDOM.render(
    <Route exact path='/' component={Home} />
    <Route path='/category' component={Onezero} />
    <Route path='/articledetail' component={ArticleDetail} />
+   <Route path='/comment' component={Comment} />
   </Switch>
  </Router>,
 
