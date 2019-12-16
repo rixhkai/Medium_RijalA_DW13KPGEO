@@ -15,6 +15,7 @@ import Stories from "./component/profile/Story";
 import Stats from "./component/profile/Stats";
 import Bookmarks from "./component/bookmark/Bookmarks";
 import ProfilPage from "./component/profile/ProfilePage";
+import ArticlePerson from "./component/home/ArticlePerson";
 
 ReactDOM.render(
  <Router>
@@ -28,6 +29,7 @@ ReactDOM.render(
    <Route path='/stats' component={Stats} />
    <Route path='/bookmarks' component={Bookmarks} />
    <Route path='/profile' component={ProfilPage} />
+   <Route path='/articleperson' component={ArticlePerson} />
   </Switch>
  </Router>,
 
