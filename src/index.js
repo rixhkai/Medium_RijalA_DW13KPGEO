@@ -14,6 +14,7 @@ import Comment from "./component/detail/Comment";
 import Stories from "./component/profile/Story";
 import Stats from "./component/profile/Stats";
 import Bookmarks from "./component/bookmark/Bookmarks";
+import ProfilPage from "./component/profile/ProfilePage";
 
 ReactDOM.render(
  <Router>
@@ -26,6 +27,7 @@ ReactDOM.render(
    <Route path='/stories' component={Stories} />
    <Route path='/stats' component={Stats} />
    <Route path='/bookmarks' component={Bookmarks} />
+   <Route path='/profile' component={ProfilPage} />
   </Switch>
  </Router>,
 
