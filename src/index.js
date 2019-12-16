@@ -22,6 +22,7 @@ ReactDOM.render(
   <Switch>
    <Route exact path='/' component={Home} />
    <Route path='/category' component={Onezero} />
+   <Route path='/articledetail' component={ArticleDetail} />
   </Switch>
  </Router>,
 
