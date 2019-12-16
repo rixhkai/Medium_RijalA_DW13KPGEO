@@ -11,6 +11,7 @@ import {Onezero} from "./component/category/OneZero";
 import ArticleDetail from "./component/detail/ArticleDetail";
 import NewStory from "./component/profile/NewStory";
 import Comment from "./component/detail/Comment";
+import Stories from "./component/profile/Story";
 
 ReactDOM.render(
  <Router>
@@ -20,6 +21,7 @@ ReactDOM.render(
    <Route path='/articledetail' component={ArticleDetail} />
    <Route path='/comment' component={Comment} />
    <Route path='/new_story' component={NewStory} />
+   <Route path='/stories' component={Stories} />
   </Switch>
  </Router>,
 
