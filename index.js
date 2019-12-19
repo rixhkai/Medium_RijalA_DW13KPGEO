@@ -13,6 +13,7 @@ app.use(function(req, res, next) {
 });
 
 const Cat = require("./controllers/categories"); //declare variable categories from controllers
+const home = require("./controllers/home");
 
 //create the homepage route
 app.get("/", (req, res) => {
@@ -23,6 +24,10 @@ app.get("/", (req, res) => {
 app.group("/api/v1", router => {
  router.get("/categories", Cat.index);
  router.post("/category", Cat.store);
+ router.get("/articles", home.index);
+ router.get("/posts", home.pop);
+ router.get("/artilce", home.show);
+ router.post("/posting", home.store);
 });
 
 //when this nodejs app executed, it will listen to defined port
