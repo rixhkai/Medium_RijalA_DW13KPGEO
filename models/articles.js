@@ -21,6 +21,16 @@ module.exports = (sequelize, DataTypes) => {
    as: "author",
    foreignKey: "author_id"
   });
+
+  articles.belongsTo(models.categories, {
+   as: "category",
+   foreignKey: "id"
+  });
+
+  articles.hasMany(models.comments, {
+   as: "comment",
+   foreignKey: "article_id"
+  });
  };
  return articles;
 };

@@ -22,12 +22,13 @@ app.get("/", (req, res) => {
 });
 
 app.group("/api/v1", router => {
- router.get("/categories", Cat.index);
- router.post("/category", Cat.store);
- router.get("/articles", home.index);
- router.get("/posts", home.pop);
- router.get("/artilce", home.show);
+ router.get("/categories", Cat.index); //get all categories
+ router.post("/category", Cat.store); // create new category
+ router.get("/articles", home.index); // get all article
+ router.get("/posts", home.pop); // get latest article
+ //  router.get("/article/:id", home.show);
  router.post("/posting", home.store);
+ router.get("/category/:id/article", home.getCat); //get article by category
 });
 
 //when this nodejs app executed, it will listen to defined port
